@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +25,7 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/LICENSE" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -42,7 +52,7 @@
       <updated>1610853700777</updated>
       <workItem from="1610853705231" duration="1631000" />
       <workItem from="1610855361952" duration="397000" />
-      <workItem from="1610855884634" duration="59000" />
+      <workItem from="1610855884634" duration="298000" />
     </task>
     <servers />
   </component>
