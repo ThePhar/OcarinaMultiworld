@@ -11,7 +11,8 @@ namespace OcarinaMultiworld.Client
     {
         private readonly TcpListener _server;
         private          TcpClient   _client;
-        public           ListenState State = ListenState.NotRunning;
+        
+        public           ListenState State { get; private set; } = ListenState.NotRunning;
 
         public ListenServer(string ip, int port)
         {
