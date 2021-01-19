@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Equipment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Keyring.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Songs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +50,11 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationType.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Keyring.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Songs.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Equipment.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -114,7 +107,7 @@
       <workItem from="1610853705231" duration="1631000" />
       <workItem from="1610855361952" duration="397000" />
       <workItem from="1610855884634" duration="1194000" />
-      <workItem from="1610857642780" duration="21007000" />
+      <workItem from="1610857642780" duration="21332000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>

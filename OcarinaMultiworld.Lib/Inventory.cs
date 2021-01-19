@@ -4,7 +4,7 @@ namespace OcarinaMultiworld.Lib
 {
     public class Inventory
     {
-        public Item[] Slots = new Item[24]
+        public Item[] Slots { get; init; } = new Item[24]
         {
             ItemList.Empty, ItemList.Empty, ItemList.Empty, ItemList.Empty, ItemList.Empty, ItemList.Empty,
             ItemList.Empty, ItemList.Empty, ItemList.Empty, ItemList.Empty, ItemList.Empty, ItemList.Empty,
