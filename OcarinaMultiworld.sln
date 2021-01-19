@@ -1,8 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcarinaMultiworld.Client", "OcarinaMultiworld.Client\OcarinaMultiworld.Client.csproj", "{D4684BEC-5171-4C2E-B5A4-DF69AF3F8DFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lua", "lua", "{578FB419-3725-4270-8B30-65623EA350D6}"
+ProjectSection(SolutionItems) = preProject
+	ootr-bridge.lua = ootr-bridge.lua
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcarinaMultiworld.Lib", "OcarinaMultiworld.Lib\OcarinaMultiworld.Lib.csproj", "{7203BB7B-1505-49BF-87F5-9A1BC46788F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4684BEC-5171-4C2E-B5A4-DF69AF3F8DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4684BEC-5171-4C2E-B5A4-DF69AF3F8DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4684BEC-5171-4C2E-B5A4-DF69AF3F8DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4684BEC-5171-4C2E-B5A4-DF69AF3F8DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7203BB7B-1505-49BF-87F5-9A1BC46788F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7203BB7B-1505-49BF-87F5-9A1BC46788F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7203BB7B-1505-49BF-87F5-9A1BC46788F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7203BB7B-1505-49BF-87F5-9A1BC46788F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
