@@ -2,28 +2,29 @@
 {
     public class Equipment
     {
-        public bool KokiriSword    { get; init; } = false;
-        public bool MasterSword    { get; init; } = false;
-        public bool BiggoronSword  { get; init; } = false;
-        public bool GiantsKnife    { get; init; } = false;
-        public bool DekuShield     { get; init; } = false;
-        public bool HylianShield   { get; init; } = false;
-        public bool MirrorShield   { get; init; } = false;
-        public bool KokiriTunic    { get; init; } = true;
-        public bool GoronTunic     { get; init; } = false;
-        public bool ZoraTunic      { get; init; } = false;
-        public bool KokiriBoots    { get; init; } = true;
-        public bool IronBoots      { get; init; } = false;
-        public bool HoverBoots     { get; init; } = false;
-        public bool GerudoCard     { get; init; } = false;
-        public bool StoneOfAgony   { get; init; } = false;
-        public int  StrengthLevel  { get; init; } = 0;
-        public int  ScaleLevel     { get; init; } = 0;
-        public int  MagicLevel     { get; init; } = 0;
-        public int  WalletLevel    { get; init; } = 0;
-        public int  SticksUpgrade  { get; init; } = 0;
-        public int  NutsUpgrade    { get; init; } = 0;
-        public int  BombBagUpgrade { get; init; } = 0;
-        public int  QuiverUpgrade  { get; init; } = 0;
+        public bool KokiriSword    { get; set; } = false;
+        public bool MasterSword    { get; set; } = false;
+        public bool BiggoronSword  { get; set; } = false;
+        public bool GiantsKnife    { get; set; } = false;
+        public bool DekuShield     { get; set; } = false;
+        public bool HylianShield   { get; set; } = false;
+        public bool MirrorShield   { get; set; } = false;
+        public bool KokiriTunic    { get; set; } = true;
+        public bool GoronTunic     { get; set; } = false;
+        public bool ZoraTunic      { get; set; } = false;
+        public bool KokiriBoots    { get; set; } = true;
+        public bool IronBoots      { get; set; } = false;
+        public bool HoverBoots     { get; set; } = false;
+        public int  StrengthLevel  { get; set; } = 0;
+        public int  ScaleLevel     { get; set; } = 0;
+        public int  MagicLevel     { get; set; } = 0;
+        public int  WalletLevel    { get; set; } = 0;
+        public int  SticksUpgrade  { get; set; } = 0;
+        public int  NutsUpgrade    { get; set; } = 0;
+        public int  BombBagUpgrade { get; set; } = 0;
+        public int  QuiverUpgrade  { get; set; } = 0;
+        public int  SeedBagUpgrade { get; set; } = 0;
+
+        public override string ToString() => this.PropertyList(1);
     }
 }

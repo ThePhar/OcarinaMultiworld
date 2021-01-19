@@ -2,17 +2,22 @@
 {
     public class Quest
     {
-        public uint SkulltulaTokens { get; init; } = 0;
-        public uint TriforcePieces  { get; init; } = 0;
+        public uint SkulltulaTokens { get; set; } = 0;
+        public uint TriforcePieces  { get; set; } = 0;
 
-        public bool Emerald  { get; init; } = false;
-        public bool Ruby     { get; init; } = false;
-        public bool Sapphire { get; init; } = false;
-        public bool Light    { get; init; } = false;
-        public bool Forest   { get; init; } = false;
-        public bool Fire     { get; init; } = false;
-        public bool Water    { get; init; } = false;
-        public bool Shadow   { get; init; } = false;
-        public bool Spirit   { get; init; } = false;
+        public bool Emerald  { get; set; } = false;
+        public bool Ruby     { get; set; } = false;
+        public bool Sapphire { get; set; } = false;
+        public bool Light    { get; set; } = false;
+        public bool Forest   { get; set; } = false;
+        public bool Fire     { get; set; } = false;
+        public bool Water    { get; set; } = false;
+        public bool Shadow   { get; set; } = false;
+        public bool Spirit   { get; set; } = false;
+
+        public bool GerudoCard   { get; set; } = false;
+        public bool StoneOfAgony { get; set; } = false;
+        
+        public override string ToString() => this.PropertyList(1);
     }
 }

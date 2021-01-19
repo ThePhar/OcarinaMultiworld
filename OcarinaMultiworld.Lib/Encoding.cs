@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace OcarinaMultiworld.Lib
 {
@@ -75,6 +77,23 @@ namespace OcarinaMultiworld.Lib
             }
 
             return bytes.ToArray();
+        }
+
+        // Shamelessly stolen (and modified) from https://stackoverflow.com/a/16932448/8891387
+        public static string PropertyList(this object obj, int indent = 0)
+        {
+            var props = obj.GetType().GetProperties();
+            var sb = new StringBuilder();
+
+            sb.Append('\n');
+            
+            foreach (var p in props)
+            {
+                var tabs = string.Concat(Enumerable.Repeat("\t", indent));
+                sb.AppendLine(tabs + p.Name + ": " + p.GetValue(obj, null));
+            }
+
+            return sb.ToString();
         }
     }
 }

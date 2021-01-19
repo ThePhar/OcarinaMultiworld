@@ -18,5 +18,7 @@
             Name = name;
             Number = number;
         }
+
+        public override string ToString() => this.PropertyList();
     }
 }

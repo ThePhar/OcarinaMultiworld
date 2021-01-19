@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OcarinaMultiworld.Lib
+﻿namespace OcarinaMultiworld.Lib
 {
     public record Item
     {

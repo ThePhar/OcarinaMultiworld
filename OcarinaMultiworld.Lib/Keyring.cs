@@ -12,5 +12,7 @@
             get => _keys == byte.MaxValue ? 0 : _keys;
             set => _keys = value;
         }
+        
+        public override string ToString() => this.PropertyList(2);
     }
 }

@@ -20,6 +20,7 @@
           </e>
         </e>
         <e p="OcarinaMultiworld.Client.csproj" t="IncludeRecursive" />
+        <e p="Parser.cs" t="Include" />
         <e p="Program.cs" t="Include" />
       </e>
       <e p="OcarinaMultiworld.Lib" t="IncludeRecursive">
@@ -42,10 +43,10 @@
           </e>
         </e>
         <e p="OcarinaMultiworld.Lib.csproj" t="IncludeRecursive" />
-        <e p="Parser.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Quest.cs" t="Include" />
         <e p="Songs.cs" t="Include" />
+        <e p="UpdateFlag.cs" t="Include" />
       </e>
       <e p="OcarinaMultiworld.sln" t="IncludeFlat" />
       <e p="ootr-bridge.lua" t="Include" />

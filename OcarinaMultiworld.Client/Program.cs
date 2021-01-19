@@ -15,25 +15,26 @@ namespace OcarinaMultiworld.Client
             
             Console.WriteLine("Listen server created...");
 
+            var player = new Player("Phar", 1);
+            
+            // TODO: REMOVE THIS GOD AWFUL THING.
+            retry:
+            if (server.State != ListenState.Ready)
+                goto retry;
+            
+            const uint address = 0x11A5D0;
+            const uint bytes = 0x1000;
+                
+            // server.WriteToMemory(address, "Phar".ConvertToOot());
+                
             while (true)
             {
-                if (server.State != ListenState.Ready)
-                    continue;
-                
-                // TODO: Remove this debug code.
-                const uint address = 0x11A5D0 + 0x24;
-                const uint bytes = 0x8;
+                var updated = Parser.TryUpdatePlayer(ref player, server);
 
-                
-                server.WriteToMemory(address, "Linke".ConvertToOot());
-                
-                while (true)
+                if (updated)
                 {
-                    var response = server.ReadFromMemory(address, bytes);
-                    Console.WriteLine($"Reading address {address}: [ {string.Join(",", response)} ]");
-
-                    var name = response.ConvertToAscii();
-                    Console.WriteLine($"Your name is {name}.");
+                    Console.Clear();
+                    Console.WriteLine(player);
                 }
             }
         }
