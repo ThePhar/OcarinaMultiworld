@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Parser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" afterDir="false" />
@@ -60,9 +58,9 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Parser.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -115,7 +113,7 @@
       <workItem from="1610853705231" duration="1631000" />
       <workItem from="1610855361952" duration="397000" />
       <workItem from="1610855884634" duration="1194000" />
-      <workItem from="1610857642780" duration="26457000" />
+      <workItem from="1610857642780" duration="27376000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>

@@ -23,6 +23,9 @@ namespace OcarinaMultiworld.Client
                 // TODO: Remove this debug code.
                 const uint address = 0x11A5D0 + 0x24;
                 const uint bytes = 0x8;
+
+                
+                server.WriteToMemory(address, "Linke".ConvertToOot());
                 
                 while (true)
                 {

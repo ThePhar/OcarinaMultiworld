@@ -70,7 +70,7 @@ namespace OcarinaMultiworld.Lib
 
             if (fillEndOfLine)
             {
-                for (var i = limit - bytes.Count; i < limit; i++)
+                for (var i = limit - bytes.Count; i > 0; i--)
                     bytes.Add(0xDF);
             }
 
