@@ -1,5 +1,6 @@
 ﻿using OcarinaMultiworld.Lib;
 using System;
+using System.IO;
 using System.Threading;
 
 namespace OcarinaMultiworld.Client
@@ -16,25 +17,28 @@ namespace OcarinaMultiworld.Client
             Console.WriteLine("Listen server created...");
 
             var player = new Player("Phar", 1);
-            
-            // TODO: REMOVE THIS GOD AWFUL THING.
-            retry:
-            if (server.State != ListenState.Ready)
-                goto retry;
-            
-            const uint address = 0x11A5D0;
-            const uint bytes = 0x1000;
-                
-            // server.WriteToMemory(address, "Phar".ConvertToOot());
-                
+
             while (true)
             {
-                var updated = Parser.TryUpdatePlayer(ref player, server);
+                if (server.State != ListenState.Ready)
+                    continue;
 
-                if (updated)
+                try
                 {
-                    Console.Clear();
-                    Console.WriteLine(player);
+                    if (Parser.IsStateSafeToUpdate(server) && Parser.TryUpdatePlayer(ref player, server))
+                    {
+                        Console.Clear();
+                        Console.WriteLine(player);
+                    }
+                }
+                catch (IOException e)
+                {
+                    Console.WriteLine("Failed to read from ootr-bridge.lua. Closing connection and retrying to connect...");
+                    server.CloseClient();;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"An error has occurred: {e}");
                 }
             }
         }

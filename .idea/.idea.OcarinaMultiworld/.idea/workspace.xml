@@ -7,20 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Gamemode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Keyring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Keyring.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/UpdateFlag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Songs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Songs.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +49,6 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Strings.properties" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenState.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Class1.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/ItemList.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Location.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" />
@@ -67,14 +58,16 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Keyring.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/UpdateFlag.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Songs.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Equipment.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Gamemode.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -127,7 +120,7 @@
       <workItem from="1610853705231" duration="1631000" />
       <workItem from="1610855361952" duration="397000" />
       <workItem from="1610855884634" duration="1194000" />
-      <workItem from="1610857642780" duration="37118000" />
+      <workItem from="1610857642780" duration="39798000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>

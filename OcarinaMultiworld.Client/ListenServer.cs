@@ -21,6 +21,12 @@ namespace OcarinaMultiworld.Client
             _server.Start();
         }
 
+        public void CloseClient()
+        {
+            _client?.Close();
+            State = ListenState.NotRunning;
+        }
+        
         public void StartListener()
         {
             try

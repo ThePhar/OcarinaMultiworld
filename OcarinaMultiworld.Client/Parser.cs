@@ -1,4 +1,5 @@
 ﻿using OcarinaMultiworld.Lib;
+using System;
 using System.Reflection;
 
 namespace OcarinaMultiworld.Client
@@ -291,6 +292,75 @@ namespace OcarinaMultiworld.Client
             keyrings.GanonsCastle.SmallKeys =  keys[0x0D];
 
             return updated;
+        }
+
+        public static bool IsStateSafeToUpdate(ListenServer server)
+        {
+            return GetGamemode(server) switch
+            {
+                Gamemode.Unknown        => false,
+                Gamemode.N64Logo        => false,
+                Gamemode.TitleScreen    => false,
+                Gamemode.FileSelect     => false,
+                Gamemode.NormalGameplay => true,
+                Gamemode.Cutscene       => true,
+                Gamemode.Paused         => true,
+                Gamemode.Dying          => false,
+                Gamemode.DyingMenuStart => false,
+                Gamemode.Dead           => false,
+                _                       => false,
+            };
+        }
+
+        private static Gamemode GetGamemode(ListenServer server)
+        {
+            Gamemode gamemode;
+
+            // I pretty much just stole what was in the original bizhawk file because heck if I'm calculating all this manually.
+            // Mad props to TestRunnerSRL. <3
+            
+            var main = server.ReadFromMemory(0x11B92F)[0];
+            var sub = server.ReadFromMemory(0x11B933)[0];
+            var menu = server.ReadFromMemory(0x1D8DD5)[0];
+            var logo = server.ReadFromMemory(0x11F200, 4).GetInt();
+            var status = server.ReadFromMemory(0x1DB09C)[0];
+            var health= server.ReadFromMemory(0x11A600, 2).GetShort();
+            var save = server.ReadFromMemory(0x11B927)[0];
+            
+            // N64 Logo
+            if (logo == 0x802C5880 || logo == 0x00000000)
+                gamemode = Gamemode.N64Logo;
+            
+            // Main State Check
+            else if (main == 1)
+                gamemode = Gamemode.TitleScreen;
+            else if (main == 2)
+                gamemode = Gamemode.FileSelect;
+            
+            // Main Menu State Check
+            else if (menu == 0)
+            {
+                // Make sure we're loaded in our save and not, say... the TITLE SCREEN.
+                if (save == 0xFF)
+                    gamemode = Gamemode.Unknown;
+                
+                else if ((status & 0x27) == 0x27 || health <= 0)
+                    gamemode = Gamemode.Dying;
+                else if (sub == 4)
+                    gamemode = Gamemode.Cutscene;
+                else
+                    gamemode = Gamemode.NormalGameplay;
+            }
+
+            // Alternative Menu States
+            else if (0 < menu && menu < 9 || menu == 13)
+                gamemode = Gamemode.Paused;
+            else if (menu == 9 || menu == 11)
+                gamemode = Gamemode.DyingMenuStart;
+            else
+                gamemode = Gamemode.Dead;
+
+            return gamemode;
         }
         
         private static bool CheckMask(this byte b, byte mask) => (b & mask) != 0;

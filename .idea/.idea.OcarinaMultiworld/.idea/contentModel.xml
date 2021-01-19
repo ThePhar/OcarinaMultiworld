@@ -28,6 +28,7 @@
         <e p="Dungeons.cs" t="Include" />
         <e p="Encoding.cs" t="Include" />
         <e p="Equipment.cs" t="Include" />
+        <e p="Gamemode.cs" t="Include" />
         <e p="Inventory.cs" t="Include" />
         <e p="Item.cs" t="Include" />
         <e p="ItemList.cs" t="Include" />
