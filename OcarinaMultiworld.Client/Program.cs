@@ -1,13 +1,12 @@
-﻿using System;
-using System.IO;
+﻿using OcarinaMultiworld.Lib;
+using System;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace OcarinaMultiworld.Client
 {
     internal static class Program
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Starting listen server...");
             var server = new ListenServer("127.0.0.1", 39876);
@@ -22,27 +21,18 @@ namespace OcarinaMultiworld.Client
                     continue;
                 
                 // TODO: Remove this debug code.
-                const uint address = 0x11A5D0;
-                const uint bytes = 0x10;
-
-                var response = server.WriteToMemory(0x400034, new byte[] { 255, 255, 0, 0 });
-                if (response[0] == 0)
-                {
-                    Console.WriteLine("Good!");
-                }
-                else
-                {
-                    throw new IOException("Invalid response from client script.");
-                }
-            
+                const uint address = 0x11A5D0 + 0x24;
+                const uint bytes = 0x8;
+                
                 while (true)
                 {
-                    response = server.ReadFromMemory(address, bytes);
+                    var response = server.ReadFromMemory(address, bytes);
                     Console.WriteLine($"Reading address {address}: [ {string.Join(",", response)} ]");
+
+                    var name = response.ConvertToAscii();
+                    Console.WriteLine($"Your name is {name}.");
                 }
             }
-            
-            await Task.Delay(-1);
         }
     }
 }

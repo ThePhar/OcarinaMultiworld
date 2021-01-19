@@ -42,6 +42,7 @@
           </e>
         </e>
         <e p="OcarinaMultiworld.Lib.csproj" t="IncludeRecursive" />
+        <e p="Parser.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Quest.cs" t="Include" />
         <e p="Songs.cs" t="Include" />

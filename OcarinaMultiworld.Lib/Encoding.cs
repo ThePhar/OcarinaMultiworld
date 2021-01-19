@@ -13,7 +13,7 @@ namespace OcarinaMultiworld.Lib
                 text += b switch
                 {
                     <= 0x09             => (char) (b + 0x30), // 0 - 9
-                    >= 0xAB and <= 0xC3 => (char) (b - 0x6A), // A - Z
+                    >= 0xAB and <= 0xC4 => (char) (b - 0x6A), // A - Z
                     >= 0xC5 and <= 0xDE => (char) (b - 0x64), // a - z
                     0xEA                => ".",
                     0xE4                => "-",
