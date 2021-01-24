@@ -7,6 +7,8 @@ namespace OcarinaMultiworld.Server
 {
     public record Message
     {
+        public const string ServerName = "OcarinaMultiworld";
+        
         public MessageType Type   { get; private init; }
         public string      Sender { get; private init; }
         public MessageData Data   { get; private init; }
@@ -22,9 +24,7 @@ namespace OcarinaMultiworld.Server
                 return ToString();
             }
         }
-
-        public static readonly string ServerName = "OcarinaMultiworld";
-
+        
         public Message(string rawMessage)
         {
             // Remove the first character which denotes the type of message and trim message of extra spaces and newlines.

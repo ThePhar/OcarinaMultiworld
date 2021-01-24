@@ -93,6 +93,9 @@
         <e p="Player.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Server.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Room.xaml" t="Include" />
+        </e>
       </e>
       <e p="OcarinaMultiworld.sln" t="IncludeFlat" />
       <e p="ootr-bridge.lua" t="Include" />

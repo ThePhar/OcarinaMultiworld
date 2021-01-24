@@ -1,0 +1,30 @@
+﻿<Document xmlns="urn:alba:cs-console-format"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Span Background="Yellow" Text="Order #"/>
+    <Span Text="{Get OrderId}"/>
+    <Br/>
+    <Span Background="Yellow" Text="Customer: "/>
+    <Span Text="{Get Customer.Name}"/>
+
+    <Grid Color="Gray">
+        <Grid.Columns>
+            <Column Width="Auto"/>
+            <Column Width="*"/>
+            <Column Width="Auto"/>
+        </Grid.Columns>
+        <Cell Stroke="Single Double" Color="White">Id</Cell>
+        <Cell Stroke="Single Double" Color="White">Name</Cell>
+        <Cell Stroke="Single Double" Color="White">Count</Cell>
+        <Repeater Items="{Get OrderItems}">
+            <Cell>
+                <Span Text="{Get Id}"/>
+            </Cell>
+            <Cell>
+                <Span Text="{Get Name}"/>
+            </Cell>
+            <Cell Align="Right">
+                <Span Text="{Get Count}"/>
+            </Cell>
+        </Repeater>
+    </Grid>
+</Document>

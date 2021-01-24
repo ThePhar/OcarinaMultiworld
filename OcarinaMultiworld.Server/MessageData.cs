@@ -43,15 +43,31 @@ namespace OcarinaMultiworld.Server
             {
                 foreach (var (key, value) in entry)
                 {
-                    var newHeader = header == "" ? key : $"{header}:{key}";
-                    builder.Append(DataToString(value, newHeader) + ",");
+                    switch (header)
+                    {
+                        case "" when int.TryParse(key, out _):
+                            builder.Append(value + ",");
+                            break;
+
+                        case "":
+                            builder.Append(DataToString(value, key) + ",");
+                            break;
+
+                        default:
+                            builder.Append(DataToString(value, $"{header}:{key}") + ",");
+                            break;
+                    }
                 }
 
                 builder.Remove(builder.Length - 1, 1);
             }
-            else
+            else if (header != "")
             {
                 builder.Append($"{header}:{data}");
+            }
+            else
+            {
+                builder.Append($"{data}");
             }
 
             return builder.ToString();

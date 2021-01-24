@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alba.CsConsoleFormat;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
@@ -12,7 +13,7 @@ namespace OcarinaMultiworld.Server
         private readonly TcpListener   _server;
         private readonly Dictionary<string, Player> _players = new();
 
-        public Server(string ip, int port, string[] players)
+        public Server(string ip, int port, IEnumerable<string> players)
         {
             var addr = IPAddress.Parse(ip);
             _server = new TcpListener(addr, port);
@@ -51,6 +52,8 @@ namespace OcarinaMultiworld.Server
 
             try
             {
+                
+                
                 while (true)
                 {
                     Console.Clear();
@@ -168,7 +171,7 @@ namespace OcarinaMultiworld.Server
             stream.WriteTimeout = 3000; // 3 seconds.
             stream.Write(Encoding.ASCII.GetBytes(message));
         }
-        
+
         private Message AwaitMessage(TcpClient client)
         {
             var stream = client.GetStream();
