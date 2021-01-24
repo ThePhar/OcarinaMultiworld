@@ -46,8 +46,53 @@
         <e p="OcarinaMultiworld.Lib.csproj" t="IncludeRecursive" />
         <e p="Player.cs" t="Include" />
         <e p="Quest.cs" t="Include" />
+        <e p="Settings.cs" t="Include" />
+        <e p="SettingsEnums" t="Include">
+          <e p="BridgeRequirement.cs" t="Include" />
+          <e p="DamageMultiplier.cs" t="Include" />
+          <e p="GerudoFortress.cs" t="Include" />
+          <e p="Hints.cs" t="Include" />
+          <e p="IceTrapAppearance.cs" t="Include" />
+          <e p="IceTraps.cs" t="Include" />
+          <e p="ItemPool.cs" t="Include" />
+          <e p="LogicRules.cs" t="Include" />
+          <e p="MixEntrancePools.cs" t="Include" />
+          <e p="OpenForest.cs" t="Include" />
+          <e p="OpenKakariko.cs" t="Include" />
+          <e p="Shopsanity.cs" t="Include" />
+          <e p="ShuffleFortressKeys.cs" t="Include" />
+          <e p="ShuffleGanonBossKey.cs" t="Include" />
+          <e p="ShuffleInteriorEntrances.cs" t="Include" />
+          <e p="ShuffleKeys.cs" t="Include" />
+          <e p="ShuffleMapAndCompass.cs" t="Include" />
+          <e p="ShuffleScrubs.cs" t="Include" />
+          <e p="ShuffleSongs.cs" t="Include" />
+          <e p="StartingAge.cs" t="Include" />
+          <e p="StartingTimeOfDay.cs" t="Include" />
+          <e p="TextShuffle.cs" t="Include" />
+          <e p="Tokensanity.cs" t="Include" />
+          <e p="ZoraFountain.cs" t="Include" />
+        </e>
         <e p="Songs.cs" t="Include" />
         <e p="UpdateFlag.cs" t="Include" />
+      </e>
+      <e p="OcarinaMultiworld.Server" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Extensions.cs" t="Include" />
+        <e p="Message.cs" t="Include" />
+        <e p="MessageData.cs" t="Include" />
+        <e p="MessageType.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="OcarinaMultiworld.Server.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="OcarinaMultiworld.Server.csproj" t="IncludeRecursive" />
+        <e p="Player.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Server.cs" t="Include" />
       </e>
       <e p="OcarinaMultiworld.sln" t="IncludeFlat" />
       <e p="ootr-bridge.lua" t="Include" />

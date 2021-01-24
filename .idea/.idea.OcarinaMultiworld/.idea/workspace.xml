@@ -4,15 +4,46 @@
     <projectFile>OcarinaClient/OcarinaClient.csproj</projectFile>
     <projectFile>OcarinaServer/OcarinaServer.csproj</projectFile>
     <projectFile>OcarinaMultiworld.Client/OcarinaMultiworld.Client.csproj</projectFile>
+    <projectFile>OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Gamemode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/BridgeRequirement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/DamageMultiplier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/GerudoFortress.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/Hints.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/IceTrapAppearance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/IceTraps.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ItemPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/LogicRules.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/MixEntrancePools.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/OpenForest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/OpenKakariko.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/Shopsanity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleFortressKeys.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleGanonBossKey.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleInteriorEntrances.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleKeys.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleMapAndCompass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleScrubs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleSongs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/StartingAge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/StartingTimeOfDay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/TextShuffle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/Tokensanity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ZoraFountain.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,31 +63,18 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1E1/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D3BFDB86-DA53-416A-9A76-296E6325A7B3/fe/06d34a32/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1E2/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1F2/Encoding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/412/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/37/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/40/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B40FEC0A-39FF-4129-BE9C-26E6A74130AC/20/Socket.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/README.md" />
-      <option value="$PROJECT_DIR$/LICENSE" />
-      <option value="$PROJECT_DIR$/OcarinaLib/Class1.cs" />
-      <option value="$PROJECT_DIR$/OcarinaTests/Tests.cs" />
-      <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.cs" />
-      <option value="$PROJECT_DIR$/ootr-bridge.lua" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Server.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Strings.resx" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Strings.restext" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Strings.properties" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenState.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Class1.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/ItemList.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Location.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationType.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Item.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Parser.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Keyring.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Encoding.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/UpdateFlag.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" />
@@ -68,6 +86,46 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/ListenServer.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Parser.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Pro.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/World.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/OpenForestSetting.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/OpenKakarikoSetting.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ZoraFountainSetting.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/GerudoFortressSetting.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/GerudoFortress.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ZoraFountain.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/OpenKakariko.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/OpenForest.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/BridgeRequirement.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/LogicRules.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleSongs.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleInteriorEntrances.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/MixEntrancePools.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleScrubs.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/Shopsanity.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/Tokensanity.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleMapAndCompass.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleKeys.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleFortressKeys.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ShuffleGanonBossKey.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/Hints.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/TextShuffle.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/IceTrapAppearance.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/IceTraps.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ItemPool.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/DamageMultiplier.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/StartingTimeOfDay.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/StartingAge.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageType.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Entry.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -81,6 +139,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35066667" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -89,7 +149,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.OcarinaMultiworld.Server">
     <configuration name="OcarinaMultiworld.Client" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/OcarinaMultiworld.Client/bin/Debug/net5.0/OcarinaMultiworld.Client.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -108,6 +168,28 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="OcarinaMultiworld.Server" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.OcarinaMultiworld.Client" />
+      <item itemvalue=".NET Project.OcarinaMultiworld.Server" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +202,9 @@
       <workItem from="1610853705231" duration="1631000" />
       <workItem from="1610855361952" duration="397000" />
       <workItem from="1610855884634" duration="1194000" />
-      <workItem from="1610857642780" duration="39798000" />
+      <workItem from="1610857642780" duration="42390000" />
+      <workItem from="1611184390136" duration="6883000" />
+      <workItem from="1611285262255" duration="17493000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>
@@ -174,7 +258,64 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs</url>
+          <line>190</line>
+          <properties documentPath="Z:\Projects\OcarinaMultiworld\OcarinaMultiworld.Server\Server.cs" initialLine="168" containingFunctionPresentation="method 'AwaitMessage'">
+            <startOffsets>
+              <option value="6737" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6765" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs</url>
+          <line>40</line>
+          <properties documentPath="Z:\Projects\OcarinaMultiworld\OcarinaMultiworld.Server\Message.cs" initialLine="28" containingFunctionPresentation="constructor 'Message'">
+            <startOffsets>
+              <option value="1211" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1254" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs</url>
+          <line>28</line>
+          <properties documentPath="Z:\Projects\OcarinaMultiworld\OcarinaMultiworld.Server\MessageData.cs" initialLine="28" containingFunctionPresentation="constructor 'MessageData'">
+            <startOffsets>
+              <option value="827" />
+            </startOffsets>
+            <endOffsets>
+              <option value="918" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs</url>
+          <line>20</line>
+          <properties documentPath="Z:\Projects\OcarinaMultiworld\OcarinaMultiworld.Server\Server.cs" initialLine="20" containingFunctionPresentation="constructor 'Server'">
+            <startOffsets>
+              <option value="530" />
+            </startOffsets>
+            <endOffsets>
+              <option value="561" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#System.Collections.Generic.Dictionary`2" memberName="Keys" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
