@@ -9,7 +9,7 @@ EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcarinaMultiworld.Lib", "OcarinaMultiworld.Lib\OcarinaMultiworld.Lib.csproj", "{7203BB7B-1505-49BF-87F5-9A1BC46788F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcarinaMultiworld.Server", "OcarinaMultiworld.Server\OcarinaMultiworld.Server.csproj", "{E9E504B8-2BDC-4358-90D2-4BDA57AE960A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcarinaMultiworld.Server.Legacy", "OcarinaMultiworld.Server.Legacy\OcarinaMultiworld.Server.Legacy.csproj", "{E9E504B8-2BDC-4358-90D2-4BDA57AE960A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
