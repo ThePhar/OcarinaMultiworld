@@ -1,10 +1,9 @@
-﻿using OcarinaMultiworld.Lib.SettingsEnums;
+﻿using OcarinaMultiworld.Lib.Settings;
 using System;
-using System.Text;
 
 namespace OcarinaMultiworld.Lib
 {
-    public record Settings
+    public record SettingsFile
     {
         // Required Fields
         public string   Version                { get; }
@@ -13,7 +12,7 @@ namespace OcarinaMultiworld.Lib
         public string   SettingsString         { get; }
         public bool     EnableDistributionFile { get; }
 
-        public Settings(string version, string[] fileHash, string seed, string settingsString, bool enableDistributionFile)
+        public SettingsFile(string version, string[] fileHash, string seed, string settingsString, bool enableDistributionFile)
         {
             Version = version;
             FileHash = fileHash;

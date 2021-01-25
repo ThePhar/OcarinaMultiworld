@@ -1,4 +1,4 @@
-﻿namespace OcarinaMultiworld.Lib.SettingsEnums
+﻿namespace OcarinaMultiworld.Lib.Settings
 {
     public enum MixEntrancePools
     {

@@ -11,6 +11,7 @@
         public const string Boomerang           = "Boomerang";
         public const string Bombchus            = "Bombchus";
         public const string BombBag             = "Bomb Bag";
+        public const string Bombs               = "Bombs";
         public const string Bow                 = "Bow";
         public const string DekuNutCapacity     = "Deku Nut Capacity";
         public const string DekuNuts            = "Deku Nuts";
@@ -147,11 +148,12 @@
         public const string BuyBombs5C35    = "Buy Bombs (5) [35]";
         public const string BuyBombs10      = "Buy Bombs (10)";
         public const string BuyBombs20      = "Buy Bombs (20)";
-        public const string BuyBottleBug    = "Buy Bottle Bug";
+        public const string BuyBottleBugs   = "Buy Bottle Bug";
         public const string BuyDekuNuts5    = "Buy Deku Nuts (5)";
         public const string BuyDekuNuts10   = "Buy Deku Nuts (10)";
         public const string BuyDekuSeeds30  = "Buy Deku Seeds (30)";
         public const string BuyDekuShield   = "Buy Deku Shield";
+        public const string BuyDekuSticks1  = "Buy Deku Sticks (1)";
         public const string BuyFairy        = "Buy Fairy's Spirit";
         public const string BuyFish         = "Buy Fish";
         public const string BuyGoronTunic   = "Buy Goron Tunic";
@@ -165,13 +167,14 @@
         public const string BuyZoraTunic    = "Buy Zora Tunic";
 
         // Dungeon Items
-        public const string BossKey          = "Boss Key";
-        public const string BossKeyForest    = "Boss Key (Forest Temple)";
-        public const string BossKeyFire      = "Boss Key (Fire Temple)";
-        public const string BossKeyWater     = "Boss Key (Water Temple)";
-        public const string BossKeySpirit    = "Boss Key (Spirit Temple)";
-        public const string BossKeyShadow    = "Boss Key (Shadow Temple)";
-        public const string BossKeyGanon     = "Boss Key (Ganon's Castle)";
+        public const string BossKey       = "Boss Key";
+        public const string BossKeyForest = "Boss Key (Forest Temple)";
+        public const string BossKeyFire   = "Boss Key (Fire Temple)";
+        public const string BossKeyWater  = "Boss Key (Water Temple)";
+        public const string BossKeySpirit = "Boss Key (Spirit Temple)";
+        public const string BossKeyShadow = "Boss Key (Shadow Temple)";
+        public const string BossKeyGanon  = "Boss Key (Ganon's Castle)";
+
         public const string Compass          = "Compass";
         public const string CompassDeku      = "Compass (Deku Tree)";
         public const string CompassDodongo   = "Compass (Dodongo's Cavern)";
@@ -183,17 +186,19 @@
         public const string CompassShadow    = "Compass (Shadow Temple)";
         public const string CompassWell      = "Compass (Bottom of the Well)";
         public const string CompassIceCavern = "Compass (Ice Cavern)";
-        public const string Map              = "Map";
-        public const string MapDeku          = "Map (Deku Tree)";
-        public const string MapDodongo       = "Map (Dodongo's Cavern)";
-        public const string MapJabu          = "Map (Jabu Jabu's Belly)";
-        public const string MapForest        = "Map (Forest Temple)";
-        public const string MapFire          = "Map (Fire Temple)";
-        public const string MapWater         = "Map (Water Temple)";
-        public const string MapSpirit        = "Map (Spirit Temple)";
-        public const string MapShadow        = "Map (Shadow Temple)";
-        public const string MapWell          = "Map (Bottom of the Well)";
-        public const string MapIceCavern     = "Map (Ice Cavern)";
+
+        public const string Map          = "Map";
+        public const string MapDeku      = "Map (Deku Tree)";
+        public const string MapDodongo   = "Map (Dodongo's Cavern)";
+        public const string MapJabu      = "Map (Jabu Jabu's Belly)";
+        public const string MapForest    = "Map (Forest Temple)";
+        public const string MapFire      = "Map (Fire Temple)";
+        public const string MapWater     = "Map (Water Temple)";
+        public const string MapSpirit    = "Map (Spirit Temple)";
+        public const string MapShadow    = "Map (Shadow Temple)";
+        public const string MapWell      = "Map (Bottom of the Well)";
+        public const string MapIceCavern = "Map (Ice Cavern)";
+
         public const string SmallKey         = "Small Key";
         public const string SmallKeyForest   = "Small Key (Forest Temple)";
         public const string SmallKeyFire     = "Small Key (Fire Temple)";
@@ -219,7 +224,7 @@
         // Misc.
         public const string Milk          = "Milk";
         public const string IceTrap       = "Ice Trap";
-        public const string MagicBean     = "Magic Bean";
+        public const string MagicBeans    = "Magic Beans";
         public const string SellBigPoe    = "Sell Big Poe";
         public const string DeliverLetter = "Deliver Letter";
     }

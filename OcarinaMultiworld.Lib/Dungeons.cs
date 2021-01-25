@@ -1,4 +1,6 @@
-﻿namespace OcarinaMultiworld.Lib
+﻿using OcarinaMultiworld.Lib.Items;
+
+namespace OcarinaMultiworld.Lib
 {
     public class Dungeons
     {

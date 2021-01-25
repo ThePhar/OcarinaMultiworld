@@ -30,9 +30,10 @@
         <e p="Equipment.cs" t="Include" />
         <e p="Gamemode.cs" t="Include" />
         <e p="Inventory.cs" t="Include" />
-        <e p="Item.cs" t="Include" />
-        <e p="ItemList.cs" t="Include" />
         <e p="Items" t="Include">
+          <e p="Item.cs" t="Include" />
+          <e p="ItemDictionary.cs" t="Include" />
+          <e p="ItemList.cs" t="Include" />
           <e p="ItemName.cs" t="Include" />
         </e>
         <e p="Keyring.cs" t="Include" />
@@ -76,7 +77,7 @@
           <e p="Tokensanity.cs" t="Include" />
           <e p="ZoraFountain.cs" t="Include" />
         </e>
-        <e p="Settings.cs" t="Include" />
+        <e p="SettingsFile.cs" t="Include" />
         <e p="Songs.cs" t="Include" />
         <e p="UpdateFlag.cs" t="Include" />
       </e>
