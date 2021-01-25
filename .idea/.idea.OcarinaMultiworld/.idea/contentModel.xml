@@ -13,7 +13,7 @@
         <e p="ListenServer.cs" t="Include" />
         <e p="ListenState.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="net5.0" t="Include">
               <e p="OcarinaMultiworld.Client.AssemblyInfo.cs" t="Include" />
             </e>
@@ -37,7 +37,7 @@
         <e p="LocationList.cs" t="Include" />
         <e p="LocationType.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="net5.0" t="Include">
               <e p="OcarinaMultiworld.Lib.AssemblyInfo.cs" t="Include" />
             </e>
@@ -83,19 +83,18 @@
         <e p="MessageData.cs" t="Include" />
         <e p="MessageType.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="net5.0" t="Include">
-              <e p="OcarinaMultiworld.Server.AssemblyInfo.cs" t="Include" />
+              <e p="linux-x64" t="Include">
+                <e p="OcarinaMultiworld.Server.AssemblyInfo.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>
         <e p="OcarinaMultiworld.Server.csproj" t="IncludeRecursive" />
         <e p="Player.cs" t="Include" />
         <e p="Program.cs" t="Include" />
-        <e p="Server.cs" t="Include" />
-        <e p="Views" t="Include">
-          <e p="Room.xaml" t="Include" />
-        </e>
+        <e p="Room.cs" t="Include" />
       </e>
       <e p="OcarinaMultiworld.sln" t="IncludeFlat" />
       <e p="ootr-bridge.lua" t="Include" />

@@ -20,13 +20,5 @@ namespace OcarinaMultiworld.Server
                 return false;
             }
         }
-        
-        public static void ErrorAndClose(this TcpClient client)
-        {
-            var stream = client.GetStream();
-            stream.WriteTimeout = 3000;
-            stream.Write(Encoding.ASCII.GetBytes(Message.Error.ToString()));
-            client.Close();
-        }
     }
 }

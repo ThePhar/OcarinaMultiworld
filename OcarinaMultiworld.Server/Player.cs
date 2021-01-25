@@ -20,37 +20,40 @@ namespace OcarinaMultiworld.Server
             Id = id;
         }
 
+        public Player(string name, int id, TcpClient socket)
+        {
+            Name = name;
+            Id = id;
+            _socket = socket;
+        }
+
         public void Enqueue(Message message)
         {
             if (message != null)
             {
                 _queue.Enqueue(message);
-                Program.WriteToFile(message.Raw);
+                Program.WriteToFile(message.ToString());
             }
         }
-        
+
         public void SendQueue(int max = int.MaxValue)
         {
             var sentMessages = 0;
             while (!_queue.IsEmpty && Active && sentMessages < max)
             {
-                var stream = _socket.GetStream();
-                stream.WriteTimeout = 3000;
-
                 try
                 {
                     // Peek, in-case we lose connection while attempting to send a message.
                     if (_queue.TryPeek(out var message))
                     {
-                        var bytes = Encoding.ASCII.GetBytes(message.Raw);
-                        stream.Write(bytes, 0, bytes.Length);
-                        
+                        Send(message);
+
                         // Successfully wrote message to client. Go ahead and dequeue it now.
                         _queue.TryDequeue(out _);
                         sentMessages++;
                     }
                 }
-                catch (IOException e)
+                catch (IOException)
                 {
                     Console.WriteLine($"({Id}) {Name} has lost connection while attempting to receive queued message.");
                     _socket.Close();
@@ -58,16 +61,52 @@ namespace OcarinaMultiworld.Server
             }
         }
 
-        public bool TryConnect(TcpClient client)
+        public bool Ready(TcpClient client)
         {
             if (Active)
             {
-                client.ErrorAndClose();
+                client.Close();
                 return false;
             }
-            
+
             _socket = client;
             return true;
+        }
+
+        public void Error()
+        {
+            Send(Message.Error());
+            Disconnect();
+        }
+        
+        public void Disconnect()
+        {
+            _socket?.Close();
+        }
+
+        public void Send(Message message)
+        {
+            var stream = _socket.GetStream();
+            stream.Write(Encoding.ASCII.GetBytes(message.ToString()));
+        }
+
+        public Message Read()
+        {
+            var stream = _socket.GetStream();
+            
+            var request = "";
+            var buffer = new byte[512];
+
+            int i;
+            while (!request.EndsWith("\n") && (i = stream.Read(buffer, 0, buffer.Length)) != 0)
+            {
+                request += Encoding.ASCII.GetString(buffer, 0, i);
+            }
+
+            if (!request.EndsWith("\n"))
+                throw new IOException("Invalid request from client.");
+
+            return new Message(request);
         }
 
         private readonly ConcurrentQueue<Message> _queue = new();

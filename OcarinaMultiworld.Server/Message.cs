@@ -13,18 +13,8 @@ namespace OcarinaMultiworld.Server
         public string      Sender { get; private init; }
         public MessageData Data   { get; private init; }
 
-        private string _raw;
-        public string Raw
-        {
-            get
-            {
-                if (_raw != null)
-                    return _raw;
+        private Message() { }
 
-                return ToString();
-            }
-        }
-        
         public Message(string rawMessage)
         {
             // Remove the first character which denotes the type of message and trim message of extra spaces and newlines.
@@ -40,37 +30,44 @@ namespace OcarinaMultiworld.Server
                 // Skip the first element, since that's our sender's name.
                 Data = new MessageData(parameters.Skip(1));
             }
-
-            _raw = rawMessage;
         }
-        
-        private Message() { }
 
-        public override string ToString() => Data != null 
-                ? $"{MessageTypeToCharacter(Type)}{Sender},{Data}\n"
-                : $"{MessageTypeToCharacter(Type)}{Sender},\n";
+        public override string ToString()
+        {
+            if (Data != null)
+            {
+                return $"{MessageTypeToCharacter(Type)}{Sender},{Data}\n";
+            }
+            
+            return $"{MessageTypeToCharacter(Type)}{Sender},\n";
+        }
 
-        public static Message Ping => new Message
+        public static Message Ping()
         {
-            Type = MessageType.Ping,
-            Sender = ServerName,
-        };
-        
-        public static Message ServerNumber => new Message
-        {
-            Type = MessageType.PlayerNumber,
-            Sender = ServerName,
-            Data = new MessageData(new[] { ServerName, "-1" }),
-        };
-        
-        public static Message PlayerNumber(Player player) => new Message
-        {
-            Type = MessageType.RamEvent,
-            Sender = player.Name,
-            Data = new MessageData(new[] { $"n:{player.Id}" }),
-        };
+            return new() { Type = MessageType.Ping, Sender = ServerName };
+        }
 
-        public static string PlayerList(IDictionary<string, Player> players)
+        public static Message ServerNumber()
+        {
+            return new()
+            {
+                Type = MessageType.PlayerNumber,
+                Sender = ServerName,
+                Data = new MessageData(new []{ ServerName, "-1" }),
+            };
+        }
+
+        public static Message PlayerNumber(Player player)
+        {
+            return new()
+            {
+                Type = MessageType.RamEvent, // ¯\_(ツ)_/¯
+                Sender = player.Name,
+                Data = new MessageData(new []{ $"n:{player.Id}" }),
+            };
+        }
+
+        public static Message PlayerList(IDictionary<string, Player> players)
         {
             var list = new StringBuilder();
 
@@ -82,29 +79,53 @@ namespace OcarinaMultiworld.Server
 
             list.Remove(list.Length - 1, 1);
 
-            return list.ToString();
+            return new()
+            {
+                Type = MessageType.PlayerList,
+                Sender = ServerName,
+                Data = new MessageData(list.ToString().Split(",")),
+            };
         }
         
-        // Still not quite sure what this is used for???
-        public static Message InitialRamEvent => new Message
+        // Still not quite sure what this is used for, but it's required as far as I can tell during connection sequence.
+        public static Message InitialRamEvent()
         {
-            Type = MessageType.RamEvent,
-            Sender = ServerName,
-            Data = new MessageData(new[] { "i:0:1" }),
-        };
-        
-        public static Message Error => new Message
+            return new()
+            {
+                Type = MessageType.RamEvent,
+                Sender = ServerName,
+                Data = new MessageData(new[] { "i:0:1" }),
+            };
+        }
+
+        public static Message Error()
         {
-            Type = MessageType.Error,
-            Sender = ServerName,
-        };
-        
-        public static Message Config(string hash, int count) => new Message
+            return new()
+            {
+                Type = MessageType.Error,
+                Sender = ServerName,
+            };
+        }
+
+        public static Message Config(string hash, int count)
         {
-            Type = MessageType.Config,
-            Sender = ServerName,
-            Data = new MessageData(new[] { hash, count.ToString() }),
-        };
+            return new()
+            {
+                Type = MessageType.Config,
+                Sender = ServerName,
+                Data = new MessageData(new[] { hash, $"{count}" }),
+            };
+        }
+
+        public static Message Status(Player player, bool ready)
+        {
+            return new()
+            {
+                Type = MessageType.PlayerStatus,
+                Sender = ServerName,
+                Data = new MessageData(new[] { player.Name, ready ? "Ready" : "Unready" }),
+            };
+        }
 
         private static MessageType CharacterToMessageType(char character)
         {

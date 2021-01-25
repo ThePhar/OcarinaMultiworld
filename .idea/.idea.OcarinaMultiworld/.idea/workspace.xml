@@ -7,15 +7,15 @@
     <projectFile>OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="port in progress of original server script">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Views/Room.xaml" afterDir="false" />
+    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="removed room.xaml that was used for testing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Room.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +34,26 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/OcarinaMultiworld.Server/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/40/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1E1/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D3BFDB86-DA53-416A-9A76-296E6325A7B3/fe/06d34a32/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1E2/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1F2/Encoding.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/412/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/37/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/40/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/19D/Thread.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1B2/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B40FEC0A-39FF-4129-BE9C-26E6A74130AC/20/Socket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/233/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Quest.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Songs.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Equipment.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" />
@@ -89,14 +95,16 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageType.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Entry.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Views/Room.xaml" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageDataObsolete.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Room.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -176,7 +184,7 @@
       <workItem from="1610857642780" duration="42390000" />
       <workItem from="1611184390136" duration="6883000" />
       <workItem from="1611285262255" duration="17493000" />
-      <workItem from="1611449126810" duration="4496000" />
+      <workItem from="1611449126810" duration="12842000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>
@@ -192,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611449188265</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed ToString conversion of messages with no table">
+      <created>1611454889085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611454889085</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed room.xaml that was used for testing">
+      <created>1611454911078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611454911078</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +242,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="updated license" />
     <MESSAGE value="port in progress of original server script" />
-    <option name="LAST_COMMIT_MESSAGE" value="port in progress of original server script" />
+    <MESSAGE value="fixed ToString conversion of messages with no table" />
+    <MESSAGE value="removed room.xaml that was used for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed room.xaml that was used for testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -237,19 +261,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs</url>
-          <line>193</line>
-          <properties documentPath="Z:\Projects\OcarinaMultiworld\OcarinaMultiworld.Server\Server.cs" initialLine="168" containingFunctionPresentation="method 'AwaitMessage'">
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
