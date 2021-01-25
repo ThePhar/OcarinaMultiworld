@@ -13,7 +13,7 @@
         <e p="ListenServer.cs" t="Include" />
         <e p="ListenState.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
+          <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
               <e p="OcarinaMultiworld.Client.AssemblyInfo.cs" t="Include" />
             </e>
@@ -32,12 +32,16 @@
         <e p="Inventory.cs" t="Include" />
         <e p="Item.cs" t="Include" />
         <e p="ItemList.cs" t="Include" />
+        <e p="Items" t="Include">
+          <e p="ItemName.cs" t="Include" />
+        </e>
         <e p="Keyring.cs" t="Include" />
         <e p="Location.cs" t="Include" />
         <e p="LocationList.cs" t="Include" />
+        <e p="Locations" t="Include" />
         <e p="LocationType.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
+          <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
               <e p="OcarinaMultiworld.Lib.AssemblyInfo.cs" t="Include" />
             </e>
@@ -46,8 +50,7 @@
         <e p="OcarinaMultiworld.Lib.csproj" t="IncludeRecursive" />
         <e p="Player.cs" t="Include" />
         <e p="Quest.cs" t="Include" />
-        <e p="Settings.cs" t="Include" />
-        <e p="SettingsEnums" t="Include">
+        <e p="Settings" t="Include">
           <e p="BridgeRequirement.cs" t="Include" />
           <e p="DamageMultiplier.cs" t="Include" />
           <e p="GerudoFortress.cs" t="Include" />
@@ -73,25 +76,38 @@
           <e p="Tokensanity.cs" t="Include" />
           <e p="ZoraFountain.cs" t="Include" />
         </e>
+        <e p="Settings.cs" t="Include" />
         <e p="Songs.cs" t="Include" />
         <e p="UpdateFlag.cs" t="Include" />
       </e>
       <e p="OcarinaMultiworld.Server" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="OcarinaMultiworld.Server.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="OcarinaMultiworld.Server.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="OcarinaMultiworld.Server.Legacy" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Extensions.cs" t="Include" />
         <e p="Message.cs" t="Include" />
         <e p="MessageData.cs" t="Include" />
         <e p="MessageType.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Release" t="Include">
+          <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
               <e p="linux-x64" t="Include">
-                <e p="OcarinaMultiworld.Server.AssemblyInfo.cs" t="Include" />
+                <e p="OcarinaMultiworld.Server.Legacy.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
         </e>
-        <e p="OcarinaMultiworld.Server.csproj" t="IncludeRecursive" />
+        <e p="OcarinaMultiworld.Server.Legacy.csproj" t="IncludeRecursive" />
         <e p="Player.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Room.cs" t="Include" />
