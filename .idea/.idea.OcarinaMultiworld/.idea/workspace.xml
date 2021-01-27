@@ -7,15 +7,12 @@
     <projectFile>OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="item dictionary and changed namespace SettingsEnum to Settings">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="removed hardcoded values for item dict and replaced with generator methods">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/OcarinaMultiworld.Lib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/OcarinaMultiworld.Lib.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/TextShuffle.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Tokensanity.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ZoraFountain.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsFile.cs" />
@@ -102,9 +98,10 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Crater.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/IceCavern.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -208,7 +205,7 @@
       <workItem from="1610857642780" duration="42390000" />
       <workItem from="1611184390136" duration="6883000" />
       <workItem from="1611285262255" duration="17493000" />
-      <workItem from="1611449126810" duration="34894000" />
+      <workItem from="1611449126810" duration="35200000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>
@@ -266,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611561817487</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="removed hardcoded values for item dict and replaced with generator methods">
+      <created>1611742800909</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611742800909</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +304,8 @@
     <MESSAGE value="moving current server to legacy to make way for own implementation" />
     <MESSAGE value="created constant class for item names" />
     <MESSAGE value="item dictionary and changed namespace SettingsEnum to Settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="item dictionary and changed namespace SettingsEnum to Settings" />
+    <MESSAGE value="removed hardcoded values for item dict and replaced with generator methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed hardcoded values for item dict and replaced with generator methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
