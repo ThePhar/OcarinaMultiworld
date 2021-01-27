@@ -1,4 +1,7 @@
-﻿namespace OcarinaMultiworld.Lib
+﻿// ReSharper disable InconsistentNaming
+
+// TODO: Clean this file up and move names to separate file.
+namespace OcarinaMultiworld.Lib
 {
     public static class LocationList
     {
@@ -12,6 +15,7 @@
         public static readonly Location BOSS_BongoBongo                          = new("Bongo Bongo", LocationType.Boss, null, 0x6A, new[] { 0x0CA3F43u, 0x0D13E19u });
         public static readonly Location BOSS_Twinrova                            = new("Twinrova", LocationType.Boss, null, 0x69, new[] { 0x0CA3EB3u, 0x0D39FF1u });
         public static readonly Location BOSS_Ganon                               = new("Ganon", LocationType.Event, null, null, null);
+        
         public static readonly Location SONG_Impa                                = new("Song from Impa", LocationType.Song, 0xFF, 0x26, new[] { 0x2E8E925u, 0x2E8E925u }, new[] { "Hyrule Castle", "Market", "Songs" });
         public static readonly Location SONG_Malon                               = new("Song from Malon", LocationType.Song, 0xFF, 0x27, new[] { 0x0D7EB53u, 0x0D7EBCFu }, new[] { "Lon Lon Ranch", "Songs" });
         public static readonly Location SONG_Saria                               = new("Song from Saria", LocationType.Song, 0xFF, 0x28, new[] { 0x20B1DB1u, 0x20B1DB1u }, new[] { "Sacred Forest Meadow", "Forest", "Songs" });
@@ -24,6 +28,7 @@
         public static readonly Location SONG_Colossus                            = new("Sheik at Colossus", LocationType.Song, 0xFF, 0x23, new[] { 0x218C57Du, 0x218C57Du }, new[] { "Desert Colossus", "Songs" });
         public static readonly Location SONG_Kakariko                            = new("Sheik in Kakariko", LocationType.Song, 0xFF, 0x24, new[] { 0x2000FE1u, 0x2000FE1u }, new[] { "Kakariko Village", "Kakariko", "Songs" });
         public static readonly Location SONG_Temple                              = new("Sheik at Temple", LocationType.Song, 0xFF, 0x25, new[] { 0x2531329u, 0x2531329u }, new[] { "Temple of Time", "Market", "Songs" });
+        
         public static readonly Location KF_MidosTopLeftChest                     = new("KF Midos Top Left Chest", LocationType.Chest, 0x28, 0x00, null, new[] { "Kokiri Forest", "Forest" });
         public static readonly Location KF_MidosTopRightChest                    = new("KF Midos Top Right Chest", LocationType.Chest, 0x28, 0x01, null, new[] { "Kokiri Forest", "Forest" });
         public static readonly Location KF_MidosBottomLeftChest                  = new("KF Midos Bottom Left Chest", LocationType.Chest, 0x28, 0x02, null, new[] { "Kokiri Forest", "Forest" });

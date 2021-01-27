@@ -7,41 +7,14 @@
     <projectFile>OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="created constant class for item names">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" afterDir="false" />
+    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="item dictionary and changed namespace SettingsEnum to Settings">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Item.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/ItemList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsFile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/BridgeRequirement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/BridgeRequirement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/DamageMultiplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/DamageMultiplier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/GerudoFortress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/GerudoFortress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Hints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Hints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/IceTrapAppearance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/IceTrapAppearance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/IceTraps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/IceTraps.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ItemPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ItemPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/LogicRules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/LogicRules.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/MixEntrancePools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/MixEntrancePools.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/OpenForest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/OpenForest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/OpenKakariko.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/OpenKakariko.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Shopsanity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Shopsanity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleFortressKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleFortressKeys.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleGanonBossKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleGanonBossKey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleInteriorEntrances.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleInteriorEntrances.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleKeys.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleMapAndCompass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleMapAndCompass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleScrubs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleScrubs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleSongs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleSongs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/StartingAge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/StartingAge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/StartingTimeOfDay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/StartingTimeOfDay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/TextShuffle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/TextShuffle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Tokensanity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Tokensanity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ZoraFountain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ZoraFountain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/OcarinaMultiworld.Lib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/OcarinaMultiworld.Lib.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.sln.DotSettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,57 +54,57 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/IceTrapAppearance.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/IceTraps.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/ItemPool.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/DamageMultiplier.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/StartingTimeOfDay.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsEnums/StartingAge.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageType.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Entry.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Views/Room.xaml" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageDataObsolete.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/MessageData.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Server.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Extensions.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Message.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Player.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Room.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server.Legacy/OcarinaMultiworld.Server.Legacy.csproj" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Dungeons.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Inventory.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/BridgeRequirement.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/DamageMultiplier.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/GerudoFortress.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Hints.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/IceTrapAppearance.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/IceTraps.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ItemPool.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/LogicRules.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/OpenForest.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/MixEntrancePools.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/OpenKakariko.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Shopsanity.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleFortressKeys.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleGanonBossKey.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleInteriorEntrances.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleKeys.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleMapAndCompass.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleScrubs.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ShuffleSongs.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/StartingAge.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/StartingTimeOfDay.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/TextShuffle.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/Tokensanity.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ZoraFountain.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsFile.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationType.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationAccessability.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationAccessibility.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Type.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Accessibility.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/AccessibilityLevel.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Gamemode.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logic/Logic.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logical/Logic.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/AccessRequirement.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logical/Trick.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logical/Tricks/DekuTreeBasementWithoutSlingshot.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logical/TrickList.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/LinksPocket.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/QueenGohma.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/KingDodongo.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/Barinade.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/PhantomGanon.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/Volvagia.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/Morpha.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/BongoBongo.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Boss/Twinrova.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationList.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationCategory.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Location.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/OcarinaOfTime.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Composers.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Saria.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Impa.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/Barinade.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/BongoBongo.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/LinksPocket.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/KingDodongo.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/Morpha.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/PhantomGanon.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/QueenGohma.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/Twinrova.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Bosses/Volvagia.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Malon.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Windmill.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Forest.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/Crater.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Songs/IceCavern.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -235,7 +208,7 @@
       <workItem from="1610857642780" duration="42390000" />
       <workItem from="1611184390136" duration="6883000" />
       <workItem from="1611285262255" duration="17493000" />
-      <workItem from="1611449126810" duration="26192000" />
+      <workItem from="1611449126810" duration="34894000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>
@@ -286,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611546739254</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="item dictionary and changed namespace SettingsEnum to Settings">
+      <created>1611561817487</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611561817487</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +299,8 @@
     <MESSAGE value="final-ish iteration of my pseudo-bizhawk coop server" />
     <MESSAGE value="moving current server to legacy to make way for own implementation" />
     <MESSAGE value="created constant class for item names" />
-    <option name="LAST_COMMIT_MESSAGE" value="created constant class for item names" />
+    <MESSAGE value="item dictionary and changed namespace SettingsEnum to Settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="item dictionary and changed namespace SettingsEnum to Settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
