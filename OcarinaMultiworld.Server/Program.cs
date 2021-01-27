@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OcarinaMultiworld.Lib.Items;
+using OcarinaMultiworld.Lib.Locations;
+using System;
 
 namespace OcarinaMultiworld.Server
 {
@@ -6,7 +8,11 @@ namespace OcarinaMultiworld.Server
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, world!");
+            var item = ItemDictionary.FetchByInventoryId(0xFF);
+            Console.WriteLine(item);
+
+            var location = LocationDictionary.FetchByName("Links Pocket");
+            Console.WriteLine(location);
         }
     }
 }

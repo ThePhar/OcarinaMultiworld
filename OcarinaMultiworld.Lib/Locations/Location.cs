@@ -1,4 +1,4 @@
-﻿namespace OcarinaMultiworld.Lib
+﻿namespace OcarinaMultiworld.Lib.Locations
 {
     public record Location
     {
@@ -7,9 +7,9 @@
         public byte?        Scene      { get; }
         public byte?        Flag       { get; }
         public uint[]       Addresses  { get; }
-        public string[]     Categories { get; }
+        public string[]     Categories { get; } // TODO: Remove this? Not really used in my script, more of a hold off from original python script.
 
-        public Location(string name, LocationType type, byte? scene, byte? flag, uint[] addresses, string[] categories = null)
+        internal Location(string name, LocationType type, byte? scene, byte? flag, uint[] addresses, string[] categories = null)
         {
             Name = name;
             Type = type;

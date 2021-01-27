@@ -37,9 +37,12 @@
           <e p="ItemName.cs" t="Include" />
         </e>
         <e p="Keyring.cs" t="Include" />
-        <e p="Location.cs" t="Include" />
-        <e p="LocationList.cs" t="Include" />
-        <e p="LocationType.cs" t="Include" />
+        <e p="Locations" t="Include">
+          <e p="Location.cs" t="Include" />
+          <e p="LocationDictionary.cs" t="Include" />
+          <e p="LocationList.cs" t="Include" />
+          <e p="LocationType.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">

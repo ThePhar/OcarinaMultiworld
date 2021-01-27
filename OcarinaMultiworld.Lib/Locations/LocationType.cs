@@ -1,4 +1,4 @@
-﻿namespace OcarinaMultiworld.Lib
+﻿namespace OcarinaMultiworld.Lib.Locations
 {
     public enum LocationType
     {

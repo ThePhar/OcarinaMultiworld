@@ -1,7 +1,7 @@
 ﻿// ReSharper disable InconsistentNaming
 
 // TODO: Clean this file up and move names to separate file.
-namespace OcarinaMultiworld.Lib
+namespace OcarinaMultiworld.Lib.Locations
 {
     public static class LocationList
     {
