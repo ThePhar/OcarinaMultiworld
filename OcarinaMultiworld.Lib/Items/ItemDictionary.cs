@@ -6,11 +6,11 @@ namespace OcarinaMultiworld.Lib.Items
 {
     public static class ItemDictionary
     {
-        private static readonly Dictionary<uint, Item>   InventoryIdDict = GenerateInventoryIdDictionary();
-        private static readonly Dictionary<uint, Item>   SendIdDict      = GenerateSendIdDictionary();
+        private static readonly Dictionary<byte, Item>   InventoryIdDict = GenerateInventoryIdDictionary();
+        private static readonly Dictionary<byte, Item>   SendIdDict      = GenerateSendIdDictionary();
         private static readonly Dictionary<string, Item> NamedDict       = GenerateNamedDictionary();
 
-        public static Item FetchByInventoryId(uint id)
+        public static Item FetchByInventoryId(byte id)
         {
             if (InventoryIdDict.TryGetValue(id, out var item))
                 return item;
@@ -18,7 +18,7 @@ namespace OcarinaMultiworld.Lib.Items
             return Invalid;
         }
         
-        public static Item FetchBySendId(uint id)
+        public static Item FetchBySendId(byte id)
         {
             if (SendIdDict.TryGetValue(id, out var item))
                 return item;
@@ -34,9 +34,9 @@ namespace OcarinaMultiworld.Lib.Items
             return Invalid;
         }
 
-        private static Dictionary<uint, Item> GenerateInventoryIdDictionary()
+        private static Dictionary<byte, Item> GenerateInventoryIdDictionary()
         {
-            var dict = new Dictionary<uint, Item>();
+            var dict = new Dictionary<byte, Item>();
             var fields = typeof(ItemList).GetFields();
             
             foreach (var field in fields)
@@ -51,15 +51,15 @@ namespace OcarinaMultiworld.Lib.Items
                 if (item == null || item.InventoryId == null)
                     continue;
                 
-                dict.Add((uint) item.InventoryId, item);
+                dict.Add((byte) item.InventoryId, item);
             }
 
             return dict;
         }
         
-        private static Dictionary<uint, Item> GenerateSendIdDictionary()
+        private static Dictionary<byte, Item> GenerateSendIdDictionary()
         {
-            var dict = new Dictionary<uint, Item>();
+            var dict = new Dictionary<byte, Item>();
             var fields = typeof(ItemList).GetFields();
             
             foreach (var field in fields)
@@ -74,7 +74,7 @@ namespace OcarinaMultiworld.Lib.Items
                 if (item == null || item.SendId == null)
                     continue;
                 
-                dict.Add((uint) item.SendId, item);
+                dict.Add((byte) item.SendId, item);
             }
 
             return dict;
