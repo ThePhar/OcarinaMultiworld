@@ -7,14 +7,9 @@
     <projectFile>OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="changed internal item types from uint to byte to match N64 type">
-      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationDictionary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="moved locations to match format of items and added dictionary for locations">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Location.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/ZoraFountain.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsFile.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationAccessability.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationAccessibility.cs" />
@@ -104,6 +98,7 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Location.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationDictionary.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -207,7 +202,7 @@
       <workItem from="1610857642780" duration="42390000" />
       <workItem from="1611184390136" duration="6883000" />
       <workItem from="1611285262255" duration="17493000" />
-      <workItem from="1611449126810" duration="35651000" />
+      <workItem from="1611449126810" duration="36283000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>
@@ -286,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611743165451</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="moved locations to match format of items and added dictionary for locations">
+      <created>1611743657168</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611743657168</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +325,8 @@
     <MESSAGE value="removed hardcoded values for item dict and replaced with generator methods" />
     <MESSAGE value="Changed internal item types from uint to byte to match N64 type" />
     <MESSAGE value="changed internal item types from uint to byte to match N64 type" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed internal item types from uint to byte to match N64 type" />
+    <MESSAGE value="moved locations to match format of items and added dictionary for locations" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved locations to match format of items and added dictionary for locations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,11 +18,11 @@
         public const string DekuShield          = "Deku Shield";
         public const string DekuStickCapacity   = "Deku Stick Capacity";
         public const string DekuSticks          = "Deku Sticks";
-        public const string DinsFire            = "Din's Fire";
+        public const string DinsFire            = "Dins Fire";
         public const string DoubleDefense       = "Double Defense";
-        public const string FaroresWind         = "Farore's Wind";
+        public const string FaroresWind         = "Farores Wind";
         public const string FireArrows          = "Fire Arrows";
-        public const string GiantsKnife         = "Giant's Knife";
+        public const string GiantsKnife         = "Giants Knife";
         public const string GoronTunic          = "Goron Tunic";
         public const string Hookshot            = "Hookshot";
         public const string HoverBoots          = "Hover Boots";
@@ -37,7 +37,7 @@
         public const string MagicMeter          = "Magic Meter";
         public const string MegatonHammer       = "Megaton Hammer";
         public const string MirrorShield        = "Mirror Shield";
-        public const string NayrusLove          = "Nayru's Love";
+        public const string NayrusLove          = "Nayrus Love";
         public const string Ocarina             = "Ocarina";
         public const string OcarinaFairy        = "Fairy Ocarina";
         public const string OcarinaTime         = "Ocarina of Time";
@@ -61,12 +61,12 @@
         public const string BottleMilkHalf    = "Bottle with Milk (Half)";
         public const string BottlePoe         = "Bottle with Poe";
         public const string BottleRedPotion   = "Bottle with Red Potion";
-        public const string BottleRutosLetter = "Bottle with Ruto's Letter";
+        public const string BottleRutosLetter = "Rutos Letter";
         
         // Child Trading Sequence
         public const string WeirdEgg     = "Weird Egg";
         public const string Chicken      = "Chicken";
-        public const string ZeldasLetter = "Zelda's Letter";
+        public const string ZeldasLetter = "Zeldas Letter";
         public const string MaskKeaton   = "Keaton Mask";
         public const string MaskSkull    = "Skull Mask";
         public const string MaskSpooky   = "Spooky Mask";
@@ -83,7 +83,7 @@
         public const string Cojiro       = "Cojiro";
         public const string OddMushroom  = "Odd Mushroom";
         public const string OddPotion    = "Odd Potion";
-        public const string PoachersSaw  = "Poacher's Saw";
+        public const string PoachersSaw  = "Poachers Saw";
         public const string BrokenSword  = "Broken Sword";
         public const string Prescription = "Prescription";
         public const string EyeballFrog  = "Eyeball Frog";
@@ -91,10 +91,10 @@
         public const string ClaimCheck   = "Claim Check";
 
         // Songs
-        public const string SongLullaby  = "Zelda's Lullaby";
-        public const string SongSarias   = "Saria's Song";
-        public const string SongEponas   = "Epona's Song";
-        public const string SongSuns     = "Sun's Song";
+        public const string SongLullaby  = "Zeldas Lullaby";
+        public const string SongSarias   = "Sarias Song";
+        public const string SongEponas   = "Eponas Song";
+        public const string SongSuns     = "Suns Song";
         public const string SongTime     = "Song of Time";
         public const string SongStorms   = "Song of Storms";
         public const string SongMinuet   = "Minuet of Forest";
@@ -127,14 +127,14 @@
         public const string DekuNuts5     = "Deku Nuts (5)";
         public const string DekuNuts10    = "Deku Nuts (10)";
         public const string DekuSeeds30   = "Deku Seeds (30)";
-        public const string DekuSticks1   = "Deku Sticks (1)";
+        public const string DekuSticks1   = "Deku Stick (1)";
         public const string RecoveryHeart = "Recovery Heart";
-        public const string RupeeTreasure = "Green Rupee (Treasure Chest Game)";
-        public const string Rupees1       = "Green Rupee (1)";
-        public const string Rupees5       = "Blue Rupee (5)";
-        public const string Rupees20      = "Red Rupee (20)";
-        public const string Rupees50      = "Purple Rupee (50)";
-        public const string Rupees200     = "Huge Rupee (200)";
+        public const string RupeeTreasure = "Rupee (Treasure Chest Game)";
+        public const string Rupees1       = "Rupee (1)";
+        public const string Rupees5       = "Rupees (5)";
+        public const string Rupees20      = "Rupees (20)";
+        public const string Rupees50      = "Rupees (50)";
+        public const string Rupees200     = "Rupees (200)";
 
         // Purchasable Items
         public const string BuyArrows10     = "Buy Arrows (10)";
@@ -149,11 +149,11 @@
         public const string BuyBombs10      = "Buy Bombs (10)";
         public const string BuyBombs20      = "Buy Bombs (20)";
         public const string BuyBottleBugs   = "Buy Bottle Bug";
-        public const string BuyDekuNuts5    = "Buy Deku Nuts (5)";
-        public const string BuyDekuNuts10   = "Buy Deku Nuts (10)";
+        public const string BuyDekuNuts5    = "Buy Deku Nut (5)";
+        public const string BuyDekuNuts10   = "Buy Deku Nut (10)";
         public const string BuyDekuSeeds30  = "Buy Deku Seeds (30)";
         public const string BuyDekuShield   = "Buy Deku Shield";
-        public const string BuyDekuSticks1  = "Buy Deku Sticks (1)";
+        public const string BuyDekuSticks1  = "Buy Deku Stick (1)";
         public const string BuyFairy        = "Buy Fairy's Spirit";
         public const string BuyFish         = "Buy Fish";
         public const string BuyGoronTunic   = "Buy Goron Tunic";
@@ -173,12 +173,12 @@
         public const string BossKeyWater  = "Boss Key (Water Temple)";
         public const string BossKeySpirit = "Boss Key (Spirit Temple)";
         public const string BossKeyShadow = "Boss Key (Shadow Temple)";
-        public const string BossKeyGanon  = "Boss Key (Ganon's Castle)";
+        public const string BossKeyGanon  = "Boss Key (Ganons Castle)";
 
         public const string Compass          = "Compass";
         public const string CompassDeku      = "Compass (Deku Tree)";
-        public const string CompassDodongo   = "Compass (Dodongo's Cavern)";
-        public const string CompassJabu      = "Compass (Jabu Jabu's Belly)";
+        public const string CompassDodongo   = "Compass (Dodongos Cavern)";
+        public const string CompassJabu      = "Compass (Jabu Jabus Belly)";
         public const string CompassForest    = "Compass (Forest Temple)";
         public const string CompassFire      = "Compass (Fire Temple)";
         public const string CompassWater     = "Compass (Water Temple)";
@@ -189,8 +189,8 @@
 
         public const string Map          = "Map";
         public const string MapDeku      = "Map (Deku Tree)";
-        public const string MapDodongo   = "Map (Dodongo's Cavern)";
-        public const string MapJabu      = "Map (Jabu Jabu's Belly)";
+        public const string MapDodongo   = "Map (Dodongos Cavern)";
+        public const string MapJabu      = "Map (Jabu Jabus Belly)";
         public const string MapForest    = "Map (Forest Temple)";
         public const string MapFire      = "Map (Fire Temple)";
         public const string MapWater     = "Map (Water Temple)";
@@ -208,12 +208,12 @@
         public const string SmallKeyTraining = "Small Key (Gerudo Training Grounds)";
         public const string SmallKeyFortress = "Small Key (Gerudo Fortress)";
         public const string SmallKeyWell     = "Small Key (Bottom of the Well)";
-        public const string SmallKeyGanon    = "Small Key (Ganon's Castle)";
+        public const string SmallKeyGanon    = "Small Key (Ganons Castle)";
 
         // Dungeon Rewards
         public const string KokiriEmerald   = "Kokiri Emerald";
-        public const string GoronRuby       = "Goron's Ruby";
-        public const string ZoraSapphire    = "Zora's Sapphire";
+        public const string GoronRuby       = "Goron Ruby";
+        public const string ZoraSapphire    = "Zora Sapphire";
         public const string LightMedallion  = "Light Medallion";
         public const string ForestMedallion = "Forest Medallion";
         public const string FireMedallion   = "FireMedallion";
@@ -224,7 +224,7 @@
         // Misc.
         public const string Milk          = "Milk";
         public const string IceTrap       = "Ice Trap";
-        public const string MagicBeans    = "Magic Beans";
+        public const string MagicBeans    = "Magic Bean";
         public const string SellBigPoe    = "Sell Big Poe";
         public const string DeliverLetter = "Deliver Letter";
     }
