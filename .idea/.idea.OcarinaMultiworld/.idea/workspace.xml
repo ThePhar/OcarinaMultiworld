@@ -7,9 +7,18 @@
     <projectFile>OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="moved locations to match format of items and added dictionary for locations">
+    <list default="true" id="0607f300-b1d0-4433-938f-0157f5367118" name="Default Changelist" comment="changed item names to match ootr item list">
+      <change afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OcarinaMultiworld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/SettingsFile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Lib/UpdateFlag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/OcarinaMultiworld.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +57,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/SettingsFile.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationAccessability.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationAccessibility.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Type.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Accessibility.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/AccessibilityLevel.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Gamemode.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logic/Logic.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Logical/Logic.cs" />
@@ -93,12 +96,18 @@
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemList.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/Item.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemDictionary.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationList.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationType.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/Location.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationDictionary.cs" />
-      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
       <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Items/ItemName.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Settings/SettingsFile.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/LocationCheck.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Player.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/LocationCheck.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Client/Parser.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Lib/Locations/LocationList.cs" />
+      <option value="$PROJECT_DIR$/OcarinaMultiworld.Server/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nBBeRwj6mR4sCP1u6oRpwnQIKC" />
@@ -142,9 +151,9 @@
       </method>
     </configuration>
     <configuration name="OcarinaMultiworld.Server" type="DotNetProject" factoryName=".NET Project" temporary="true">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/OcarinaMultiworld.Server/bin/Debug/net5.0/OcarinaMultiworld.Server.dll" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\Users\Phar\RomanBranch\Output\OoT_A8544_Development_W2_Spoiler.json&quot;" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OcarinaMultiworld.Server/bin/Debug/net5.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -202,7 +211,7 @@
       <workItem from="1610857642780" duration="42390000" />
       <workItem from="1611184390136" duration="6883000" />
       <workItem from="1611285262255" duration="17493000" />
-      <workItem from="1611449126810" duration="36283000" />
+      <workItem from="1611449126810" duration="43736000" />
     </task>
     <task id="LOCAL-00001" summary="updated license">
       <created>1610856334760</created>
@@ -288,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611743657168</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed item names to match ootr item list">
+      <created>1611744279004</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611744279004</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +342,8 @@
     <MESSAGE value="Changed internal item types from uint to byte to match N64 type" />
     <MESSAGE value="changed internal item types from uint to byte to match N64 type" />
     <MESSAGE value="moved locations to match format of items and added dictionary for locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved locations to match format of items and added dictionary for locations" />
+    <MESSAGE value="changed item names to match ootr item list" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed item names to match ootr item list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -343,6 +360,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/OcarinaMultiworld.Client/Program.cs</url>
+          <line>48</line>
+          <properties documentPath="Z:\Projects\OcarinaMultiworld\OcarinaMultiworld.Client\Program.cs" initialLine="48" containingFunctionPresentation="method 'CreateLocations'">
+            <startOffsets>
+              <option value="1550" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1551" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

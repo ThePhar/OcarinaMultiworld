@@ -37,6 +37,7 @@
           <e p="ItemName.cs" t="Include" />
         </e>
         <e p="Keyring.cs" t="Include" />
+        <e p="LocationCheck.cs" t="Include" />
         <e p="Locations" t="Include">
           <e p="Location.cs" t="Include" />
           <e p="LocationDictionary.cs" t="Include" />
@@ -65,6 +66,7 @@
           <e p="MixEntrancePools.cs" t="Include" />
           <e p="OpenForest.cs" t="Include" />
           <e p="OpenKakariko.cs" t="Include" />
+          <e p="SettingsFile.cs" t="Include" />
           <e p="Shopsanity.cs" t="Include" />
           <e p="ShuffleFortressKeys.cs" t="Include" />
           <e p="ShuffleGanonBossKey.cs" t="Include" />
@@ -79,9 +81,7 @@
           <e p="Tokensanity.cs" t="Include" />
           <e p="ZoraFountain.cs" t="Include" />
         </e>
-        <e p="SettingsFile.cs" t="Include" />
         <e p="Songs.cs" t="Include" />
-        <e p="UpdateFlag.cs" t="Include" />
       </e>
       <e p="OcarinaMultiworld.Server" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

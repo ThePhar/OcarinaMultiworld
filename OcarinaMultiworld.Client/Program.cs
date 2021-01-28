@@ -1,5 +1,7 @@
 ﻿using OcarinaMultiworld.Lib;
+using OcarinaMultiworld.Lib.Locations;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
@@ -16,7 +18,7 @@ namespace OcarinaMultiworld.Client
             
             Console.WriteLine("Listen server created...");
 
-            var player = new Player("Phar", 1);
+            var player = new Player("Phar", 1, CreateLocations());
 
             while (true)
             {
@@ -27,8 +29,8 @@ namespace OcarinaMultiworld.Client
                 {
                     if (Parser.IsStateSafeToUpdate(server) && Parser.TryUpdatePlayer(ref player, server))
                     {
-                        Console.Clear();
-                        Console.WriteLine(player);
+                        // Console.Clear();
+                        // Console.WriteLine(player);
                     }
                 }
                 catch (IOException e)
@@ -41,6 +43,25 @@ namespace OcarinaMultiworld.Client
                     Console.WriteLine($"An error has occurred: {e}");
                 }
             }
+        }
+
+        private static List<LocationCheck> CreateLocations()
+        {
+            var list = new List<LocationCheck>();
+            var fields = typeof(LocationList).GetFields();
+            
+            foreach (var field in fields)
+            {
+                if (field.FieldType != typeof(Location))
+                    continue;
+
+                var location = field.GetValue(null) as Location;
+                
+                if (location != null)
+                    list.Add(new LocationCheck(location, false));
+            }
+
+            return list;
         }
     }
 }

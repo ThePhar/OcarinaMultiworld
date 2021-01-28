@@ -1,5 +1,8 @@
 ﻿using OcarinaMultiworld.Lib;
+using OcarinaMultiworld.Lib.Items;
+using OcarinaMultiworld.Lib.Locations;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace OcarinaMultiworld.Client
@@ -15,6 +18,8 @@ namespace OcarinaMultiworld.Client
             if (TryUpdateQuestAndSongs(ref player, server)) updated = true;
             if (TryUpdateEquipment(ref player, server))     updated = true;
             if (TryUpdateDungeons(ref player, server))      updated = true;
+            
+            CheckLocations(ref player, server);
 
             return updated;
         }
@@ -294,6 +299,68 @@ namespace OcarinaMultiworld.Client
             return updated;
         }
 
+        private static void CheckLocations(ref Player player, ListenServer server)
+        {
+            var checks = player.Locations;
+            var sram = server.ReadFromMemory(0x11A5D0 + 0xD4, 101 * 0x1C);
+            var scenes = new List<byte[]>();
+
+            for (var i = 0; i < 101; i++)
+            {
+                var offset = i * 0x1C;
+                scenes.Add(new []
+                {
+                    sram[offset],
+                    sram[offset + 0x01],
+                    sram[offset + 0x02],
+                    sram[offset + 0x03],
+                    sram[offset + 0x04],
+                    sram[offset + 0x05],
+                    sram[offset + 0x06],
+                    sram[offset + 0x07],
+                    sram[offset + 0x08],
+                    sram[offset + 0x09],
+                    sram[offset + 0x0A],
+                    sram[offset + 0x0B],
+                    sram[offset + 0x0C],
+                    sram[offset + 0x0D],
+                    sram[offset + 0x0E],
+                    sram[offset + 0x0F],
+                    sram[offset + 0x10],
+                    sram[offset + 0x11],
+                    sram[offset + 0x12],
+                    sram[offset + 0x13],
+                    sram[offset + 0x14],
+                    sram[offset + 0x15],
+                    sram[offset + 0x16],
+                    sram[offset + 0x17],
+                    sram[offset + 0x18],
+                    sram[offset + 0x19],
+                    sram[offset + 0x1A],
+                    sram[offset + 0x1B],
+                });
+            }
+
+            foreach (var check in checks)
+            {
+                // Console.WriteLine($"Checking {check.Location.Name}");
+                
+                switch (check.Location.Type)
+                {
+                    case LocationType.Chest:
+                        if (check.Location.Scene == null || check.Location.Flag == null) continue;
+                        
+                        var scene = scenes[(int) check.Location.Scene].GetInt();
+                        if ((scene & (1 << check.Location.Flag)) != 0)
+                        {
+                            check.CheckLocation(-2, checks.Count);
+                        }
+
+                        break;
+                }
+            }
+        }
+        
         public static bool IsStateSafeToUpdate(ListenServer server)
         {
             return GetGamemode(server) switch

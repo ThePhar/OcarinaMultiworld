@@ -1,7 +1,6 @@
-﻿using OcarinaMultiworld.Lib.Settings;
-using System;
+﻿using System;
 
-namespace OcarinaMultiworld.Lib
+namespace OcarinaMultiworld.Lib.Settings
 {
     public record SettingsFile
     {

@@ -258,7 +258,7 @@ namespace OcarinaMultiworld.Lib.Locations
         public static readonly Location LH_GS_Tree                               = new("LH GS Tree", LocationType.SkulltulaToken, 0x12, 0x10, null, new[] { "Lake Hylia", "Skulltulas" });
         public static readonly Location GV_CrateFreestandingPoH                  = new("GV Crate Freestanding PoH", LocationType.Collectable, 0x5A, 0x02, null, new[] { "Gerudo Valley", "Gerudo" });
         public static readonly Location GV_WaterfallFreestandingPoH              = new("GV Waterfall Freestanding PoH", LocationType.Collectable, 0x5A, 0x01, null, new[] { "Gerudo Valley", "Gerudo" });
-        public static readonly Location GV_Chest                                 = new("GV Ches", LocationType.Chest, 0x5A, 0x00, null, new[] { "Gerudo Valley", "Gerudo" });
+        public static readonly Location GV_Chest                                 = new("GV Chest", LocationType.Chest, 0x5A, 0x00, null, new[] { "Gerudo Valley", "Gerudo" });
         public static readonly Location GV_DekuScrubGrottoFront                  = new("GV Deku Scrub Grotto Front", LocationType.GrottoNpc, 0xF0, 0x3A, null, new[] { "Gerudo Valley", "Gerudo", "Deku Scrub", "Grottos" });
         public static readonly Location GV_DekuScrubGrottoRear                   = new("GV Deku Scrub Grotto Rear", LocationType.GrottoNpc, 0xF0, 0x39, null, new[] { "Gerudo Valley", "Gerudo", "Deku Scrub", "Grottos" });
         public static readonly Location GV_Cow                                   = new("GV Cow", LocationType.Npc, 0x5A, 0x15, null, new[] { "Gerudo Valley", "Gerudo", "Cow" });
@@ -492,7 +492,7 @@ namespace OcarinaMultiworld.Lib.Locations
         public static readonly Location T3_MQ_GS_River                           = new("Water Temple MQ GS River", LocationType.SkulltulaToken, 0x05, 0x02, null, new[] { "Water Temple", "Skulltulas" });
         public static readonly Location T3_MQ_GS_FreestandingKeyArea             = new("Water Temple MQ GS Freestanding Key Area", LocationType.SkulltulaToken, 0x05, 0x08, null, new[] { "Water Temple", "Skulltulas" });
         public static readonly Location T3_MQ_GS_TripleWallTorch                 = new("Water Temple MQ GS Triple Wall Torch", LocationType.SkulltulaToken, 0x05, 0x10, null, new[] { "Water Temple", "Skulltulas" });
-        public static readonly Location T4_BossHeart                             = new("Shadow Temple Bongo Bongo Hear", LocationType.BossHeart, 0x18, 0x4F, null, new[] { "Shadow Temple" });
+        public static readonly Location T4_BossHeart                             = new("Shadow Temple Bongo Bongo Heart", LocationType.BossHeart, 0x18, 0x4F, null, new[] { "Shadow Temple" });
         public static readonly Location T4_MapChest                              = new("Shadow Temple Map Chest", LocationType.Chest, 0x07, 0x01, null, new[] { "Shadow Temple" });
         public static readonly Location T4_HoverBootsChest                       = new("Shadow Temple Hover Boots Chest", LocationType.Chest, 0x07, 0x07, null, new[] { "Shadow Temple" });
         public static readonly Location T4_CompassChest                          = new("Shadow Temple Compass Chest", LocationType.Chest, 0x07, 0x03, null, new[] { "Shadow Temple" });
@@ -539,6 +539,7 @@ namespace OcarinaMultiworld.Lib.Locations
         public static readonly Location T4_MQ_GS_WindHintRoom                    = new("Shadow Temple MQ GS Wind Hint Room", LocationType.SkulltulaToken, 0x07, 0x01, null, new[] { "Shadow Temple", "Skulltulas" });
         public static readonly Location T4_MQ_GS_AfterWind                       = new("Shadow Temple MQ GS After Wind", LocationType.SkulltulaToken, 0x07, 0x08, null, new[] { "Shadow Temple", "Skulltulas" });
         public static readonly Location T4_MQ_GS_AfterShip                       = new("Shadow Temple MQ GS After Ship", LocationType.SkulltulaToken, 0x07, 0x10, null, new[] { "Shadow Temple", "Skulltulas" });
+        public static readonly Location T4_MQ_GS_NearBoss                        = new("Shadow Temple MQ GS Near Boss", LocationType.SkulltulaToken, 0x07, 0x04, null, new[] { "Shadow Temple", "Skulltulas" });
         public static readonly Location T5_BossHeart                             = new("Spirit Temple Twinrova Heart", LocationType.BossHeart, 0x17, 0x4F, null, new[] { "Spirit Temple" });
         public static readonly Location T5_SilverGauntletsChest                  = new("Spirit Temple Silver Gauntlets Chest", LocationType.Chest, 0x5C, 0x0B, null, new[] { "Spirit Temple", "Desert Colossus" });
         public static readonly Location T5_MirrorShieldChest                     = new("Spirit Temple Mirror Shield Chest", LocationType.Chest, 0x5C, 0x09, null, new[] { "Spirit Temple", "Desert Colossus" });
